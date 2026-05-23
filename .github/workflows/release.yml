@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   docker-release:
-    uses: education-lab/.github/.github/workflows/docker-build-push.yml@main
+    uses: Ali-5873/.github/.github/workflows/docker-build-push.yml@main
     with:
       image_name: demo-node-app
       dockerfile: Dockerfile
