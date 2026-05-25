@@ -1,7 +1,8 @@
 {
-  "name": "demo-node-app",
+  "name": "demo-repo",
   "version": "1.0.0",
   "scripts": {
+    "start": "node index.js",
     "lint": "echo 'lint passed'",
     "test": "echo 'test passed'"
   },
