@@ -7,11 +7,13 @@ app = Flask(__name__)
 REDIS_HOST = os.getenv("REDIS_HOST", "redis")
 REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
 
+
 @app.route("/")
 def home():
     return jsonify({
         "message": "Hello from Flask GitOps API"
     })
+
 
 @app.route("/health")
 def health():
@@ -30,6 +32,7 @@ def health():
             "redis": "disconnected",
             "error": str(e)
         }), 500
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
