@@ -1,9 +1,8 @@
 const express = require("express");
-
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello from standardized GitHub Actions");
+  res.send("Hello from GitOps dev environment");
 });
 
 app.listen(3000, () => {
