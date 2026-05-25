@@ -11,7 +11,7 @@ REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
 @app.route("/")
 def home():
     return jsonify({
-        "message": "Hello from Flask GitOps API"
+        "message": "Hello from Flask Redis GitOps API"
     })
 
 
